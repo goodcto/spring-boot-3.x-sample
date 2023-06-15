@@ -1,0 +1,13 @@
+server:
+  port: 8045
+
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: "jdbc:mysql://localhost:3306/spring_boot_sample"
+    username: root
+    password: root
+  quartz:
+    jdbc:
+      initialize-schema: NEVER
+    job-store-type: jdbc
